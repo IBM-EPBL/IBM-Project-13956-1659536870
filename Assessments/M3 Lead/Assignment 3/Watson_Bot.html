@@ -1,0 +1,20 @@
+<html>
+<head></head>
+<body>
+    <title>My Test Page</title>
+    <p>Hospital Branch Finder</p>
+    <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "6ecd2b4b-ff0a-4e25-a1ef-5ffcbabaedbe", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "5223ed58-f69f-4c49-9e09-e6949cb6afc2", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+    </body>
+</html>
