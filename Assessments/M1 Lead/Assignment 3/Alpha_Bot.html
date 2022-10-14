@@ -1,0 +1,20 @@
+<html>
+<head></head>
+<body>
+    <title>My Test Page</title>
+    <p>Hospital Location Finder</p>
+    <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "16435cee-316a-45ad-aeab-0f7527d2b7bf", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "0415fc2c-e374-4fc5-a1a0-d0fc2cd3fc47", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+    </body>
+</html>
